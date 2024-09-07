@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .part1 h1{
+            text-align: center;
+            display: flex;
+        }
+        .part1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .part1 p{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border: 0.2px solid black;
+            background-color: rgb(54, 149, 237);
+            color: white;
+            margin: 50px;
+            padding: 20px;
+            width: 400px;
+            height: 100px;
+        }
+        
+        .part2{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .part2 p{
+            text-align: center;
+            display: flex;
+            border: 0.2px solid black;
+            background-color: rgb(54, 149, 237);
+            color: white;
+            margin: 50px;
+            padding: 20px;
+            width: 400px;
+            height: 150px;}
+        
+        .part2 h1{
+            text-align: center;
+            display: flex;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="part1">
+        <h1>State IN React</h1>
+        <div class="main">
+            <p>In React, the state is an object that holds data or information about the component. <br>
+                It allows a component to maintain and manage dynamic information that can change over time. When the state changes,<br>
+                React automatically re-renders the component to reflect the updated state in the user interface.
+            </p><hr>
+            <p>1.Local vs. Global State:
+                Local State: Managed within a single component and is used to track data specific to that component.
+                Global State: Managed across multiple components and shared through state management libraries like Redux or Context API.
+            </p><hr>
+            <p>2.State Initialization:
+
+                State is usually initialized in the component's constructor or via state hooks (e.g., useState in functional components)
+            </p>
+            <p>3.Updating State:
+
+                State can be updated using methods like setState in class components or state update functions from hooks in functional components.
+                Updating state triggers a re-render of the component, allowing the UI to reflect the new state.</p>
+            <p>4.State and Props:
+
+                Props are read-only and passed from parent to child components.
+                State is managed within the component and can be modified by that component.
+            </p>
+            <p>5.Reactivity:
+                React’s rendering process ensures that any change in state will cause the component and its child components to re-render, keeping the UI in sync with the state.
+                </p>
+            <p>6.Usage:
+
+                State is used for dynamic data, user interactions, form inputs, visibility toggles, and more.</p>
+                <p>State management is crucial for creating interactive and dynamic user interfaces in React applications. <br>
+                    It allows components to respond to user actions, data changes, and other events effectively.</p>
+</div>
+
+    </div><hr>
+    <div class="part2">
+        <h1>Props IN React</h1>
+        <div class="content">
+            <p>In React, props (short for "properties") are a way to pass data from a parent component to a child component.<br>
+                They enable components to be dynamic and reusable by allowing them to receive and display different data based on the context in which they are used.
+            </p><hr>
+            <p>1.Read-Only Data:
+                Props are immutable from the perspective of the child component; they are passed down from a parent component and cannot be modified by the child.
+                </p><hr>
+            <p>2.Component Communication:
+                Props allow data to be shared between components. Parent components can provide data to child components via props, enabling a hierarchical data flow.</p>
+            <p>3.Data Transfer:
+
+                Props can include primitive values (like strings, numbers), objects, functions, and more complex structures. This data can then be accessed within the child component.</p>
+            <p>4.Functionality:
+
+                Functions can also be passed as props, allowing child components to communicate back to parent components, such as invoking a callback function.
+            </p>
+            <p>5.Dynamic Rendering:
+
+                Components can use props to render different content or adjust their behavior based on the data they receive. This allows for flexible and customizable component behavior.
+                </p>
+            <p>6.Prop Types:
+
+                While not enforced by React, specifying prop types helps document the intended data structure and type, improving code clarity and reducing errors.</p>
+            <p>7.Destructuring:
+
+                Props can be destructured within a component to extract specific values or properties for easier use.</p>
+                <p>Props are fundamental to building React applications, as they help in creating reusable components and managing data flow between different parts of the application.</p>
+</div>
+    </div>
+</body>
+</html>
